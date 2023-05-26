@@ -1,0 +1,96 @@
+{
+  "id": "4353f15b-eaa8-4ba6-a3d2-774584f5736a",
+  "version": "2.0",
+  "name": "setproject2",
+  "url": "http://10.10.16.164/login/index.php",
+  "tests": [{
+    "id": "83eedc72-54f0-4036-ba85-b32b216a4450",
+    "name": "test2",
+    "commands": [{
+      "id": "3b8b7255-8a64-4b79-bae6-bb67d51c9480",
+      "comment": "",
+      "command": "open",
+      "target": "http://10.10.16.164/login/index.php",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "cd618fbf-c825-4ac8-b0e1-64c545d78cc3",
+      "comment": "",
+      "command": "click",
+      "target": "id=username",
+      "targets": [
+        ["id=username", "id"],
+        ["name=username", "name"],
+        ["css=#username", "css:finder"],
+        ["xpath=//input[@id='username']", "xpath:attributes"],
+        ["xpath=//form[@id='login']/div/input", "xpath:idRelative"],
+        ["xpath=//div/input", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "d36b192d-ad5a-4577-911a-7274371e76b3",
+      "comment": "",
+      "command": "type",
+      "target": "id=password",
+      "targets": [
+        ["id=password", "id"],
+        ["name=password", "name"],
+        ["css=#password", "css:finder"],
+        ["xpath=//input[@id='password']", "xpath:attributes"],
+        ["xpath=//form[@id='login']/div[2]/input", "xpath:idRelative"],
+        ["xpath=//div[2]/input", "xpath:position"]
+      ],
+      "value": "2020BTECS00015"
+    }, {
+      "id": "ab7abbe1-6f12-4f31-b281-924ec923757d",
+      "comment": "",
+      "command": "click",
+      "target": "id=loginbtn",
+      "targets": [
+        ["id=loginbtn", "id"],
+        ["css=#loginbtn", "css:finder"],
+        ["xpath=//button[@id='loginbtn']", "xpath:attributes"],
+        ["xpath=//form[@id='login']/div[3]/button", "xpath:idRelative"],
+        ["xpath=//button", "xpath:position"],
+        ["xpath=//button[contains(.,'Log in')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "7fb35528-192b-434b-800b-215f0866fea5",
+      "comment": "",
+      "command": "click",
+      "target": "css=#course-info-container-4-6 .multiline",
+      "targets": [
+        ["css=#course-info-container-4-6 .multiline", "css:finder"],
+        ["xpath=//div[@id='course-info-container-4-6']/div/div/a/span[3]", "xpath:idRelative"],
+        ["xpath=//div[2]/div/div/div/a/span[3]", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "90dbef65-1daa-4af2-b874-f17acfd730a6",
+      "comment": "",
+      "command": "click",
+      "target": "linkText=Attendance",
+      "targets": [
+        ["linkText=Attendance", "linkText"],
+        ["css=.modtype_attendance .aalink", "css:finder"],
+        ["xpath=(//a[@onclick=''])[3]", "xpath:attributes"],
+        ["xpath=//li[@id='module-415']/div/div/div/div/div/div[2]/div[2]/a", "xpath:idRelative"],
+        ["xpath=//a[@href='http://10.10.16.164/mod/attendance/view.php?id=415']", "xpath:href"],
+        ["xpath=//li[3]/div/div/div/div/div/div[2]/div[2]/a", "xpath:position"],
+        ["xpath=//a[contains(.,'Attendance')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }]
+  }],
+  "suites": [{
+    "id": "f7182153-97f3-4fc8-bd29-54f1dce7e497",
+    "name": "Default Suite",
+    "persistSession": false,
+    "parallel": false,
+    "timeout": 300,
+    "tests": ["83eedc72-54f0-4036-ba85-b32b216a4450"]
+  }],
+  "urls": ["http://10.10.16.164/login/index.php"],
+  "plugins": []
+}
